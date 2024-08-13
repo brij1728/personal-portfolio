@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { ThemeToggle } from '../ThemeToggle';
 
 export const Header = () => (
   <header className="p-4  text-secondary-100 dark:text-primary-300">
@@ -11,9 +12,9 @@ export const Header = () => (
           width={40}
           height={40}
         />
-        <span className="text-4xl font-semibold text-secondary-200 font-montserrat">
+        <span className="text-4xl font-semibold text-secondary-200 dark:text-primary-300 font-montserrat">
           M
-          <span className="text-secondary-300 text-xl font-normal tracking-widest">
+          <span className="text-secondary-300 dark:text-primary-300 text-xl font-normal tracking-widest">
             umair
           </span>
         </span>
@@ -40,6 +41,8 @@ export const Header = () => (
         </li>
       </ul>
 
+      <ThemeToggle/>
+
       <Link
         href="/Brijesh Kumar resume.pdf"
         target="_blank"
@@ -49,6 +52,7 @@ export const Header = () => (
       >
         Download CV
       </Link>
+
     </nav>
   </header>
 );

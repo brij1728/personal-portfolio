@@ -1,1 +1,4 @@
-export * from './'
+export * from './Header';
+export * from './Footer';
+export * from './AboutMe';
+export * from './Services';

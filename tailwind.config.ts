@@ -9,11 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#FD6F00', 
+        primary:  {
+          100: '#FD6F00',
+          200: '#FF8C00',
+          300: '#FFFFFF'
+
+
+        },
         secondary: {
           100: '#000000',
           200: '#1E1E1E',
           300: '#545454',
+          400: '#121212'
         },
         orange: {
           50: '#fff6e6',

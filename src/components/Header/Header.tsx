@@ -4,7 +4,6 @@ import Link from 'next/link';
 export const Header = () => (
   <header className="p-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
     <nav className="flex justify-between items-center max-w-7xl mx-auto">
-      {/* Logo Section */}
       <div className="flex items-center space-x-2">
         <Image
           src="/logo.png" 
@@ -12,10 +11,15 @@ export const Header = () => (
           width={40}
           height={40}
         />
-        <span className="text-xl font-bold">Mumair</span>
+        <span className="text-4xl font-semibold text-secondary-200 font-montserrat">
+            M
+         <span className="text-secondary-300 text-xl font-normal tracking-widest">
+            umair
+          </span>
+        </span>
+
       </div>
 
-      {/* Navigation Links */}
       <ul className="flex space-x-8">
         <li><Link href="#home" className="hover:text-primary">Home</Link></li>
         <li><Link href="#about" className="hover:text-primary">About Me</Link></li>

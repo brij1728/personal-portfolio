@@ -1,7 +1,15 @@
+import Image from 'next/image';
 export const AboutMe = () => (
-  <section className="p-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-    <h2 className="text-2xl font-bold">About Me</h2>
-    <p>UI/UX Designer with expertise in web and app design.</p>
-  </section>
+   <div className='flex justify-around gap-8'>
+  <div>
+    <Image src="/me.png" alt="About Me" width={400} height={400} />
+    
+  </div>
+  <div>
+    <h2 className='text-3xl font-bold  text-secondary-100'>About Me</h2>
+
+  </div>
+  </div>
+
 );
 

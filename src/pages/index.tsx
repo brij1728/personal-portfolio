@@ -2,13 +2,17 @@ import { AboutMe, Footer, Header, Home, Services } from "@/components";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className="min-h-screen flex flex-col bg-primary-300 dark:bg-secondary-200 text-secondary-100 dark:text-primary-300">
       <Header />
-      <main className="flex-grow w-full max-w-6xl p-4 flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center w-full space-y-16">
-          <Home />
-          <AboutMe />
-          <Services />
+      <main className="flex-grow w-full max-w-6xl p-4 mx-auto flex flex-col justify-center">
+        <div className="flex justify-between items-start w-full">
+          <div className="flex-grow flex flex-col items-start space-y-16">
+            <Home />
+            <AboutMe />
+            <Services />
+          </div>
+          <div className="flex-grow flex justify-end items-start">
+          </div>
         </div>
       </main>
       <Footer />

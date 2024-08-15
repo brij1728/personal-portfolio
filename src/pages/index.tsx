@@ -1,17 +1,15 @@
-import { AboutMe, Footer, Header, Services } from "@/components";
+import { AboutMe, Footer, Header, Home, Services } from "@/components";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className="min-h-screen flex flex-col items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
       <Header />
-      <main className="flex-grow p-4">
-        <section >
-          <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
-          <p className="mt-4">Here is a showcase of my work and skills.</p>
-        </section>
-        <AboutMe />
-        <Services />
-        {/* Add other sections here like Projects, Testimonials, etc. */}
+      <main className="flex-grow w-full max-w-6xl p-4 flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center w-full space-y-16">
+          <Home />
+          <AboutMe />
+          <Services />
+        </div>
       </main>
       <Footer />
     </div>

@@ -3,3 +3,4 @@ export * from './Footer';
 export * from './AboutMe';
 export * from './Services';
 export * from './ThemeToggle';
+export * from './Home';

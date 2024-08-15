@@ -32,30 +32,30 @@ export const Home = () => {
           height={400}
           className="rounded-full"
         />
-        <div className="flex justify-center items-center gap-4 pt-4">
+        <div className="flex justify-center items-center gap-3 pt-4">
           <Image
             src="/facebook.png"
             alt="Facebook"
-            width={30}
-            height={30}
+            width={20}
+            height={20}
           />
           <Image
             src="/twitter.png"
             alt="Twitter"
-            width={30}
-            height={30}
+            width={20}
+            height={20}
           />
           <Image
             src="/instagram.png"
             alt="Instagram"
-            width={30}
-            height={30}
+            width={20}
+            height={20}
           />
           <Image
             src="/linkedin.png"
             alt="Linkedin"
-            width={30}
-            height={30}
+            width={20}
+            height={20}
           />
         </div>
       </div>

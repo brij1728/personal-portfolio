@@ -1,7 +1,7 @@
 import Image from 'next/image';
 export const Services = () => (
   <>
-  <div className="flex flex-col justify-center items-center text-secondary-100 dark:text-primary-300">
+  <div className="flex flex-col justify-center items-center text-secondary-100 dark:text-primary-300 pt-10">
         <h2 className='text-3xl  font-semibold '>Services</h2>
         <p className="text-base pt-10 ">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
 

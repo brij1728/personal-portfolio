@@ -1,4 +1,6 @@
-import { AboutMe, Footer, Header, Home, MyProjects, Services } from "@/components";
+import { AboutMe, Footer, Header, Home, MyProjects, Services, Testimonials } from "@/components";
+
+import { Contact } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -11,6 +13,8 @@ export default function HomePage() {
             <AboutMe />
             <Services />
             <MyProjects />
+            <Testimonials />
+            <Contact />
           </div>
           <div className="flex-grow flex justify-end items-start">
           </div>

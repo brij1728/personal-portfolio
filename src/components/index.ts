@@ -5,3 +5,5 @@ export * from './Services';
 export * from './ThemeToggle';
 export * from './Home';
 export * from './MyProjects';
+export * from './Contact';
+export * from './Testimonials';

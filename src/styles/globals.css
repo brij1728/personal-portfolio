@@ -14,3 +14,21 @@ body {
 .nav-links li:hover a {
   color: #FD6F00;
 }
+
+.slick-custom .slick-dots li button:before {
+  font-size: 0;
+  width: 30px;
+  height: 8px;
+  background-color: #D9D9D9;
+  content: " ";
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.slick-custom .slick-dots li.slick-active button:before {
+  background-color: #Fd6F00;
+}
+
+.slick-custom .slick-dots li {
+  margin: 0 8px;
+}

@@ -6,7 +6,6 @@ import { SkillBar } from '../ui';
 
 export const AboutMe = () => (
   <div className="flex flex-col md:flex-row justify-around items-center gap-8 w-full p-8">
-    {/* Left Side: Image */}
     <div>
       <Image src="/me.png" alt="About Me" width={400} height={400} className="rounded-full" />
     </div>

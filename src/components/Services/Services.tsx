@@ -1,24 +1,45 @@
+import Image from 'next/image';
 export const Services = () => (
-  <section className="p-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-    <h2 className="text-2xl font-bold">Services</h2>
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-      <div className="service-card">
-        <h3 className="font-semibold">UI/UX Design</h3>
-        <p>Creating visually appealing user interfaces.</p>
-      </div>
-      <div className="service-card">
-        <h3 className="font-semibold">Web Design</h3>
-        <p>Modern and responsive web design services.</p>
-      </div>
-      <div className="service-card">
-        <h3 className="font-semibold">App Design</h3>
-        <p>Designing intuitive and user-friendly apps.</p>
-      </div>
-      <div className="service-card">
-        <h3 className="font-semibold">Graphic Design</h3>
-        <p>Stunning graphic design for branding purposes.</p>
+  <>
+  <div className="flex flex-col justify-center items-center text-secondary-100 dark:text-primary-300">
+        <h2 className='text-3xl  font-semibold '>Services</h2>
+        <p className="text-base pt-10 ">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
+
+  </div>
+  <div className='flex flex-col md:flex-row md:gap-6 gap-2'>
+    <div className='bg-primary-600 dark:bg-primary-300 flex flex-col'>
+      <div className='pt-8 pb-2 px-4'>
+      <Image src="/ui.png" alt="service1" width={70} height={80} />
+
+      <h3 className='text-2xl text-secondary-100'>UI/UX </h3>
+      <p className='text-base text-secondary-100 '>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
       </div>
     </div>
-  </section>
+    <div className='bg-primary-600 dark:bg-primary-300 flex flex-col'>
+      <div className='pt-8 pb-2 px-4'>
+      <Image src="/web.png" alt="service1" width={70} height={80} />
+
+      <h3 className='text-2xl text-secondary-100'>Web Design</h3>
+      <p className='text-base text-secondary-100 '>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
+      </div>
+    </div>
+    <div className='bg-primary-600 dark:bg-primary-300 flex flex-col'>
+      <div className='pt-8 pb-2 px-4'>
+      <Image src="/app.png" alt="service1" width={70} height={80} />
+
+      <h3 className='text-2xl text-secondary-100'>App Design</h3>
+      <p className='text-base text-secondary-100 '>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
+      </div>
+    </div>
+    <div className='bg-primary-600 dark:bg-primary-300 flex flex-col '>
+      <div className='pt-8 pb-2 px-4'>
+      <Image src="/graphic.png" alt="service1" width={70} height={80} />
+
+      <h3 className='text-2xl text-secondary-100'>Graphic Design</h3>
+      <p className='text-base text-secondary-100 '>Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
+      </div>
+    </div>
+  </div>
+  </>
 );
 

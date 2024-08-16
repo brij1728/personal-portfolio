@@ -39,7 +39,7 @@ export const Testimonials = () => {
   };
 
   return (
-    <div className="py-16">
+    <div className="py-16 flex flex-col justify-center items-center w-full">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-secondary-100 dark:text-primary-300">Testimonials</h2>
         <p className="text-base text-secondary-100 dark:text-primary-300 mt-4 max-w-2xl mx-auto font-poppins">
@@ -48,8 +48,8 @@ export const Testimonials = () => {
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto">
-        <Slider {...settings} className='slick-custom'>
+      <div className="max-w-4xl mx-auto w-full"> {/* Ensure full width and centered */}
+        <Slider {...settings} className="slick-custom">
           {testimonialsData.map((testimonial, index) => (
             <div key={index} className="px-8">
               <div className="flex flex-col md:flex-row items-center bg-primary-600 p-8 rounded-lg shadow-lg">
@@ -61,7 +61,7 @@ export const Testimonials = () => {
                   className="rounded-full"
                 />
                 <div className="md:ml-8 mt-4 md:mt-0 text-center md:text-left">
-                  <p className="text-base  text-secondary-500 font-poppins ">
+                  <p className="text-base text-secondary-500 font-poppins">
                     {testimonial.quote}
                   </p>
                   <p className="mt-4 font-bold text-secondary-100">{testimonial.name}</p>

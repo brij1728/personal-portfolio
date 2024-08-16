@@ -5,18 +5,24 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-primary-300 dark:bg-secondary-200 text-secondary-100 dark:text-primary-300">
       <Header />
       <main className="flex-grow w-full max-w-6xl p-4 mx-auto flex flex-col justify-center">
-        <div className="flex justify-between items-start w-full">
-          <div className="flex-grow flex flex-col items-start space-y-16">
-            <Home />
-            <AboutMe />
-            <Services />
-            <MyProjects />
-            <Testimonials />
-            <Contact />
-          </div>
-          <div className="flex-grow flex justify-end items-start">
-          </div>
-        </div>
+        <section id="home" className="flex-grow flex flex-col items-start space-y-16">
+          <Home />
+        </section>
+        <section id="about">
+          <AboutMe />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="projects">
+          <MyProjects />
+        </section>
+        <section id="testimonials">
+          <Testimonials />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
       <Footer />
     </div>

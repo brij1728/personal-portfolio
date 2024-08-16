@@ -1,6 +1,5 @@
-Here is a standard `README.md` file for your project:
 
-```markdown
+
 # Personal Portfolio
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -114,13 +113,3 @@ To learn more about the technologies used in this project:
 - [Next-themes Documentation](https://github.com/pacocoursey/next-themes)
 - [React Slick Documentation](https://react-slick.neostack.com/)
 
-## Contributing
-
-Contributions are welcome! If you have any suggestions or improvements, feel free to fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-```
-
-This `README.md` provides an overview of the project, installation instructions, links to the live project and GitHub repository, and a description of the main technologies used.

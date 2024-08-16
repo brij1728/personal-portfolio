@@ -1,6 +1,4 @@
-import { AboutMe, Footer, Header, Home, MyProjects, Services, Testimonials } from "@/components";
-
-import { Contact } from "lucide-react";
+import { AboutMe, Contact, Footer, Header, Home, MyProjects, Services, Testimonials } from "@/components";
 
 export default function HomePage() {
   return (

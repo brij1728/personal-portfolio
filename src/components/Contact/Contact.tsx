@@ -1,43 +1,31 @@
-import React, { useState } from 'react';
+import { Button } from '../ui';
+import React from 'react';
 
 export const Contact = () => {
-  const [email, setEmail] = useState('');
-
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    alert(`Email Submitted: ${email}`);
-  };
-
   return (
-    <div className="flex flex-col items-center py-16 bg-white dark:bg-gray-900">
-      <h2 className="text-4xl font-bold text-black">Let&apos;s Design Together</h2>
-      <p className="text-lg text-black text-center mt-4 max-w-2xl">
-        Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium
-      </p>
+    <div className="flex flex-col justify-center items-center w-full">
+      <div className="text-secondary-100 dark:text-primary-300 flex flex-col justify-center items-center text-center">
+        {/* Ensure text-center is applied for multiline centering */}
+        <h2 className="text-4xl font-bold">Lets Design Together</h2>
+        <p className="text-base font-poppins pt-4 max-w-2xl">
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.
+          Aliquet donec morbi convallis pretium
+        </p>
+      </div>
 
-      <form
-        onSubmit={handleSubmit}
-        className="flex flex-col md:flex-row items-center mt-8 gap-4"
-      >
-        <input
-          type="email"
-          value={email}
-          onChange={handleEmailChange}
-          placeholder="Enter Your Email"
-          className="px-4 py-3 rounded-lg border border-gray-300 dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-100 w-72 md:w-96"
-          required
-        />
-        <button
-          type="submit"
-          className="bg-primary-100 text-white py-3 px-6 rounded-lg hover:bg-primary-200 focus:outline-none focus:ring-2 focus:ring-primary-100 transition"
-        >
-          Contact Me
-        </button>
-      </form>
+      <div className="mt-6">
+        <form className="flex flex-col md:flex-row justify-center items-center gap-4">
+          {/* Adjust gap and alignment for responsiveness */}
+          <input
+            type="text"
+            placeholder="Enter Your Email"
+            className="bg-primary-600 text-secondary-600 border border-secondary-700 text-base p-3 rounded-xl mt-4 md:mt-0 w-full md:w-auto"
+          />
+          <Button className="bg-primary-100 text-primary-300 font-semibold dark:text-primary-300 p-3 rounded-lg mt-4 md:mt-0 w-full md:w-auto">
+            Contact Me
+          </Button>
+        </form>
+      </div>
     </div>
   );
 };

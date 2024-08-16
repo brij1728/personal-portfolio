@@ -1,10 +1,14 @@
 import { Button } from '../ui';
 import Image from 'next/image';
 import React from 'react';
+import { useTheme } from 'next-themes'; // Hook to detect dark mode in Next.js
 
 export const Home = () => {
+  const { theme } = useTheme(); // Get the current theme (light or dark)
+
   return (
     <div className="flex flex-col md:flex-row justify-between items-center w-full p-8">
+      {/* Left Side: Text Content */}
       <div className="flex flex-col space-y-4 max-w-lg">
         <h1 className="text-xl font-medium text-secondary-100 dark:text-primary-300">
           Hi I am
@@ -24,6 +28,7 @@ export const Home = () => {
         </Button>
       </div>
 
+      {/* Right Side: Image and Social Media Icons */}
       <div className="relative mt-8 md:mt-0 md:ml-16 flex flex-col items-center">
         <Image
           src="/me.png"
@@ -32,31 +37,40 @@ export const Home = () => {
           height={400}
           className="rounded-full"
         />
-        <div className="flex justify-center items-center gap-3 pt-4">
-          <Image
-            src="/facebook.png"
-            alt="Facebook"
-            width={20}
-            height={20}
-          />
-          <Image
-            src="/twitter.png"
-            alt="Twitter"
-            width={20}
-            height={20}
-          />
-          <Image
-            src="/instagram.png"
-            alt="Instagram"
-            width={20}
-            height={20}
-          />
-          <Image
-            src="/linkedin.png"
-            alt="Linkedin"
-            width={20}
-            height={20}
-          />
+        <div className="flex justify-center items-center gap-4 pt-4">
+          {/* Social Media Icons with Theme Handling */}
+          <div className="p-2 rounded-full ">
+            <Image
+              src={theme === 'dark' ? '/dark-facebook.png' : '/facebook.png'}
+              alt="Facebook"
+              width={20}
+              height={20}
+            />
+          </div>
+          <div className="p-2 rounded-full">
+            <Image
+              src={theme === 'dark' ? '/dark-twitter.png' : '/twitter.png'}
+              alt="Twitter"
+              width={20}
+              height={20}
+            />
+          </div>
+          <div className="p-2 rounded-full">
+            <Image
+              src={theme === 'dark' ? '/dark-instagram.png' : '/instagram.png'}
+              alt="Instagram"
+              width={20}
+              height={20}
+            />
+          </div>
+          <div className="p-2 rounded-full">
+            <Image
+              src={theme === 'dark' ? '/dark-linkedin.png' : '/linkedin.png'}
+              alt="LinkedIn"
+              width={20}
+              height={20}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -2,29 +2,28 @@ import { Box, Stack, Typography } from '@mui/material';
 
 import Image from 'next/image';
 import React from 'react';
-import {SkillBar} from '../ui';
+import { SkillBar } from '../ui';
 
 export const AboutMe = () => (
-  <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 8, p: 4 }}>
-    <Box>
+  <div className="flex flex-col md:flex-row justify-around items-center gap-8 w-full p-8">
+    {/* Left Side: Image */}
+    <div>
       <Image src="/me.png" alt="About Me" width={400} height={400} className="rounded-full" />
-    </Box>
+    </div>
 
-    <Box sx={{ maxWidth: '600px' }}>
-      <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
-        About Me
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 4 }}>
+    <div className="max-w-lg">
+      <h2 className="text-3xl font-bold text-secondary-100 dark:text-primary-300 mb-4">About Me</h2>
+      <p className="text-secondary-100 dark:text-primary-300 text-base mb-6">
         Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.
         Aliquet donec morbi convallis pretium. Turpis tempus pharetra.
-      </Typography>
+      </p>
 
-      <Stack spacing={3}>
+    <Stack spacing={3}>
         <SkillBar skill="UX" value={90} />
         <SkillBar skill="Website Design" value={80} />
         <SkillBar skill="App Design" value={85} />
         <SkillBar skill="Graphic Design" value={70} />
       </Stack>
-    </Box>
-  </Box>
+    </div>
+  </div>
 );

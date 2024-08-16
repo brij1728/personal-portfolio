@@ -1,4 +1,4 @@
-import { AboutMe, Footer, Header, Home, Services } from "@/components";
+import { AboutMe, Footer, Header, Home, MyProjects, Services } from "@/components";
 
 export default function HomePage() {
   return (
@@ -10,6 +10,7 @@ export default function HomePage() {
             <Home />
             <AboutMe />
             <Services />
+            <MyProjects />
           </div>
           <div className="flex-grow flex justify-end items-start">
           </div>

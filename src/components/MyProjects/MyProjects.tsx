@@ -31,7 +31,7 @@ export const MyProjects = () => {
 
   return (
     <div className="flex flex-col items-center text-secondary-100 dark:text-primary-300 py-16">
-      <h2 className="text-4xl font-bold">My Projects</h2>
+      <h2 className="text-3xl font-bold">My Projects</h2>
       <p className="text-lg text-center mt-4 max-w-2xl">
         Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.
         Phasellus consequat urna tellus

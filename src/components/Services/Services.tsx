@@ -2,8 +2,8 @@ import Image from 'next/image';
 export const Services = () => (
   <>
   <div className="flex flex-col justify-center items-center text-center text-secondary-100 dark:text-primary-300 pt-10">
-        <h2 className='text-3xl  font-semibold '>Services</h2>
-        <p className="text-base pt-10 mx-auto pb-8">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus <br/> netus in. Aliquet donec morbi convallis pretium</p>
+        <h2 className='text-3xl  font-bold '>Services</h2>
+        <p className="text-base pt-4 mx-auto pb-8">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus <br/> netus in. Aliquet donec morbi convallis pretium</p>
 
   </div>
   <div className='flex flex-col md:flex-row md:gap-6 gap-2'>

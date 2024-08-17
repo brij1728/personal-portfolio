@@ -6,7 +6,7 @@ export const Contact = () => {
     <div className="flex flex-col justify-center items-center w-full">
       <div className="text-secondary-100 dark:text-primary-300 flex flex-col justify-center items-center text-center">
         {/* Ensure text-center is applied for multiline centering */}
-        <h2 className="text-4xl font-bold">Lets Design Together</h2>
+        <h2 className="text-3xl font-bold">Lets Design Together</h2>
         <p className="text-base font-poppins pt-4 max-w-2xl">
           Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.
           Aliquet donec morbi convallis pretium

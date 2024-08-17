@@ -53,7 +53,7 @@ export const Testimonials = () => {
   return (
     <div className="py-16 flex flex-col justify-center items-center w-full">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-secondary-100 dark:text-primary-300">Testimonials</h2>
+        <h2 className="text-3xl font-bold text-secondary-100 dark:text-primary-300">Testimonials</h2>
         <p className="text-base text-secondary-100 dark:text-primary-300 mt-4 max-w-2xl mx-auto font-poppins">
           Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in.
           Aliquet donec morbi convallis pretium

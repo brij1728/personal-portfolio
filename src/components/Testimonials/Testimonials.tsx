@@ -36,6 +36,18 @@ export const Testimonials = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
+    centerMode: true,
+    centerPadding: '200px',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: false, 
+          centerPadding: '0px', 
+          slidesToShow: 1, 
+        },
+      },
+    ],
   };
 
   return (
@@ -48,7 +60,7 @@ export const Testimonials = () => {
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto w-full"> {/* Ensure full width and centered */}
+      <div className="mx-auto w-full "> 
         <Slider {...settings} className="slick-custom">
           {testimonialsData.map((testimonial, index) => (
             <div key={index} className="px-8">

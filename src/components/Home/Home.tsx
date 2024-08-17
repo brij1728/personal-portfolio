@@ -15,12 +15,12 @@ export const Home = () => {
         <p className="text-2xl font-semibold text-primary-100">
           Muhammad Umair
         </p>
-        <div className="text-5xl font-bold text-black dark:text-primary-300 leading-tight">
-          <h2 className="text-left">UI & UX</h2>
-          <h2 className="text-left md:pl-8">Designer</h2>
+         <div className="flex flex-col leading-none text-5xl font-bold text-black dark:text-primary-300">
+          <h1 className="text-left">UI & UX</h1>
+          <h1 className="text-left -mt-1 md:ml-20">Designer</h1>
         </div>
         <p className="text-base text-secondary-100 dark:text-primary-300 mt-4">
-          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra.
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed<br/> massa nibh lectus netus in. Aliquet donec morbi convallis<br/> pretium. Turpis tempus pharetra.
         </p>
         <Button className="bg-primary-100 text-white text-base py-2 px-4 rounded-md mt-6 md:w-[150px] w-full">
           Hire Me
